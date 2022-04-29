@@ -1,2 +1,2 @@
 # random-things
-idk what will this pack have ¯\_(ツ)_/¯
+you will need to unzip the file to use it in game
