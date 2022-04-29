@@ -1,0 +1,1 @@
+execute as @e[type=minecart] at @s run function random-things:minecart_shooting

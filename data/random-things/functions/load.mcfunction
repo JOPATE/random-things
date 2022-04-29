@@ -1,0 +1,2 @@
+tellraw @a {"text": "random-things loaded","color": "#ffffff"}
+tellraw @a {"text": "yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","color": "#9900ff"}
