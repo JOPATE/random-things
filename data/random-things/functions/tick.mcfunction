@@ -6,3 +6,4 @@ execute as @e[type=item,name="TNT"] at @s if entity @e[type=item,name="Nether St
 execute as @a[nbt={ Inventory:[{Slot:-106b,id: "minecraft:coal"}]}] run function random-things:plane_fuel
 execute as @a run function random-things:random_arrow
 execute as @a run function random-things:gun_crafting
+execute as @a run function random-things:dmr
