@@ -1,4 +1,4 @@
-execute at @a as @e[type=arrow,distance=..2,tag=!boom] run data merge entity @s {Tags:["boom"],damage:50}
+execute at @a[nbt={Inventory:[{id:"minecraft:gold_ingot"},{id:"minecraft:gunpowder"}]}] as @e[type=spectral_arrow,distance=..2,tag=!boom] run data merge entity @s {Tags:["boom"],damage:50}
 execute if score s boom_randomizer = 1 boom_randomizer as @e[tag=boom,nbt={inGround:1b}] at @s run summon tnt ~ ~ ~0.5 {Fuse:2}
 execute if score s boom_randomizer = 1 boom_randomizer as @e[tag=boom,nbt={inGround:1b}] at @s run summon tnt ~ ~ ~-0.5 {Fuse:0}
 execute if score s boom_randomizer = 1 boom_randomizer as @e[tag=boom,nbt={inGround:1b}] at @s run summon tnt ~0.5 ~ ~ {Fuse:0}
