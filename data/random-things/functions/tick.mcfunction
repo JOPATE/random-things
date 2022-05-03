@@ -7,3 +7,5 @@ execute as @a[nbt={ Inventory:[{Slot:-106b,id: "minecraft:coal"}]}] run function
 execute as @a run function random-things:random_arrow
 execute as @a run function random-things:gun_crafting
 execute as @a run function random-things:dmr
+
+data get entity @e[type=item,limit=1] 
