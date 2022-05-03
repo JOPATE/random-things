@@ -1,1 +1,2 @@
-execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{id:"minecraft:quick_charge",lvl:255s}]}}}] at @s run data merge entity @e[type=arrow,limit=1,distance=..1.5]
+execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"DMR","italic":false}'}}}}] at @s run data merge entity @e[type=arrow,limit=1,distance=..1.5] {damage:10}
+execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"DMR","italic":false}'},Charged:0b}}}] at @s run item replace entity @s weapon.mainhand with minecraft:crossbow{Enchantments:[{id:"minecraft:piercing",lvl:20}],display:{Name:'{"text":"DMR","italic":false}'},Charged:1b,ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}]} 1
