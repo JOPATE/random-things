@@ -1,3 +1,3 @@
 execute as @a[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"AR","italic":false}'}}}}] at @s run data merge entity @e[type=arrow,limit=1,distance=..2.5] {damage:10}
-execute as @a[nbt={Inventory:[{id:"minecraft:arrow"}],SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"AR","italic":false}'},Charged:0b}}}] at @s run clear @s arrow 1
+execute as @a[nbt={Inventory:[{id:"minecraft:arrow"}],SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"AR","italic":false}'},Charged:0b}},playerGameType:1}] at @s run clear @s arrow 1
 execute as @a[nbt={Inventory:[{id:"minecraft:arrow"}],SelectedItem:{id:"minecraft:crossbow",tag:{display:{Name:'{"text":"AR","italic":false}'},Charged:0b}}}] at @s run item replace entity @s weapon.mainhand with minecraft:crossbow{Enchantments:[{id:"minecraft:piercing",lvl:20}],display:{Name:'{"text":"AR","italic":false}'},Charged:1b,ChargedProjectiles:[{id:"minecraft:arrow",Count:1b}]} 1
