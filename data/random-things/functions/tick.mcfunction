@@ -9,3 +9,5 @@ execute as @a run function random-things:random_arrow
 #gun-related
 execute as @a run function random-things:gun_crafting
 execute as @a run function random-things:dmr
+#test-dummy_related
+execute store result bossbar minecraft:blaze value run data get entity @e[limit=1,tag=test] Health
