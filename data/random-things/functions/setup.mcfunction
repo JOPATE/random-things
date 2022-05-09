@@ -11,3 +11,6 @@ scoreboard players set 2 boom_randomizer 2
 scoreboard players set 3 boom_randomizer 3
 scoreboard players set 4 boom_randomizer 4
 scoreboard players set s boom_randomizer 4
+bossbar add giant "Giant"
+bossbar set giant color green
+scoreboard objectives add giant_bar dummy
