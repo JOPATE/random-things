@@ -19,6 +19,6 @@ execute if score u giant_bar = f pf_timer run bossbar set giant players @a[dista
 execute if score u giant_bar = f pf_timer run kill @e[tag=giant_brain]
 #/trigger crash related
 execute as @a[scores={crash=1}] run reload
-execute as @a[scores={crash=1}] run tellraw @a {"text": "[console] ","color": "#ffffff","extra": [{"text":"Sigma 6.0 got access to the console","color": "#ff0000"}]}
 scoreboard players enable @a crash
+execute as @a[scores={crash=2}] run scoreboard players set crash crash 0
 execute as @a[scores={crash=2}] run scoreboard players set @s crash 0
