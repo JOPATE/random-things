@@ -14,3 +14,4 @@ scoreboard players set s boom_randomizer 4
 bossbar add giant "Giant"
 bossbar set giant color green
 scoreboard objectives add giant_bar dummy
+scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
