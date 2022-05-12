@@ -33,7 +33,10 @@ execute at @e[tag=Giant_Summon] run particle explosion
 execute at @e[tag=Giant_Summon] run particle lava
 execute at @e[tag=Giant_Summon] run particle lava
 execute as @e[tag=Giant_Summon] at @s run tag @s add summon_start
-execute if score timer giant_timer = f pf_timer at @e[tag=giant] run effect give @a[distance=..4,limit=1] instant_damage 1 1 true
-scoreboard players remove timer giant_timer 1
-execute if score timer giant_timer = f pf_timer run scoreboard players set timer giant_timer 25
-#execute as @e[tag=summon_start] run 
+execute at @e[tag=giant] if entity @a[distance=..4] run scoreboard players remove timer giant_timer 1
+execute at @e[tag=giant] unless entity @a[distance=..6] run scoreboard players set timer giant_timer 5
+execute if score timer giant_timer = f pf_timer at @e[tag=giant] run effect give @a[distance=..4,limit=1] instant_damage 1 2 true
+execute if score timer giant_timer = f pf_timer run scoreboard players set timer giant_timer 45
+execute as @e[tag=giant] store result score giant_life giant_life run data get entity @s Health
+execute if score giant_life giant_life <= 50 giant_life as @e[tag=giant,tag=!giant_half] at @s run function random-things:giant_half
+execute if score u giant_bar = f pf_timer run scoreboard players set giant_life giant_life 100

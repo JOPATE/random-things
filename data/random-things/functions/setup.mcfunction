@@ -15,3 +15,7 @@ bossbar add giant "Giant"
 bossbar set giant color green
 scoreboard objectives add giant_bar dummy
 scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add giant_timer dummy
+scoreboard players set timer giant_timer 25
+scoreboard objectives add giant_life dummy
+scoreboard players set 50 giant_life 50
