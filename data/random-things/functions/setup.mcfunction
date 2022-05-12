@@ -19,3 +19,7 @@ scoreboard objectives add giant_timer dummy
 scoreboard players set timer giant_timer 25
 scoreboard objectives add giant_life dummy
 scoreboard players set 50 giant_life 50
+team add giant_friend
+team modify giant_friend friendlyFire false
+team modify giant_friend collisionRule pushOtherTeams
+team modify giant_friend color dark_red

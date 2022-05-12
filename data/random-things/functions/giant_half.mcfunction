@@ -1,8 +1,20 @@
 tag @s add giant_half
-effect give @s resistance 1 5 true
-summon tnt ~ ~ ~ {Fuse:0}
-summon tnt ~ ~ ~ {Fuse:0}
-summon tnt ~ ~ ~ {Fuse:0}
-summon tnt ~ ~ ~ {Fuse:0}
-summon tnt ~ ~ ~ {Fuse:0}
-schedule function random-things:giant_half2 20t append
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+particle flash
+summon zombie ~ ~ ~ {CustomName:'{"text":"Arthur"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.35},{Name:"minecraft:generic.armor", Base:-5},{Name:"minecraft:generic.attack_damage",Base:13}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{id:"minecraft:netherite_leggings",Count:1b},{id:"minecraft:netherite_chestplate",Count:1b},{id:"minecraft:netherite_helmet",Count:1b}],ArmorDropChances:[0.75f,0.75f,0.75f,0.75f],HandItems:[{id:"minecraft:netherite_sword",Count:1b},{id:"minecraft:netherite_axe",Count:1b}],HandDropChances:[0.75f,0.75f],Tags:["giant_half"]}
+summon bat ~ ~ ~ {Passengers:[{id:"minecraft:skeleton", CustomName:'{"text":"João"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.35},{Name:"minecraft:generic.armor", Base:-5},{Name:"minecraft:generic.attack_damage",Base:13}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{id:"minecraft:netherite_leggings",Count:1b},{id:"minecraft:netherite_chestplate",Count:1b},{id:"minecraft:netherite_helmet",Count:1b}],ArmorDropChances:[0f,0f,0f,0f],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}},{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}],HandDropChances:[0f,0f]}],Tags:["giant_half"]}
+summon bat ~ ~ ~ {Passengers:[{id:"minecraft:skeleton", CustomName:'{"text":"Luciano"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.35},{Name:"minecraft:generic.armor", Base:-5},{Name:"minecraft:generic.attack_damage",Base:13}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{id:"minecraft:netherite_leggings",Count:1b},{id:"minecraft:netherite_chestplate",Count:1b},{id:"minecraft:netherite_helmet",Count:1b}],ArmorDropChances:[0f,0f,0f,0f],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}},{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}],HandDropChances:[0f,0f]}],Tags:["giant_half"]}
+summon husk ~ ~ ~ {CustomName:'{"text":"Pedro"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.35},{Name:"minecraft:generic.armor", Base:5},{Name:"minecraft:generic.attack_damage",Base:-20}],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],HandItems:[{},{}],HandDropChances:[0f,0f],Tags:["poison_zombie","giant_half"]}
+summon minecraft:skeleton ~ ~ ~ {CustomName:'{"text":"Mathias"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.3},{Name:"minecraft:generic.armor", Base:-20},{Name:"minecraft:generic.attack_speed",Base:4}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{},{},{id:"minecraft:netherite_helmet",Count:1b}],ArmorDropChances:[0.85f,0f,0f,0.85f],HandItems:[{id:"minecraft:bow",tag:{Enchantments:[{id:"minecraft:power",lvl:8}]},Count:1b},{}],HandDropChances:[0.45f,0f],Tags:["giant_half"]}
+summon zombie ~ ~ ~ {CustomName:'{"text":"Gabriel"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.2},{Name:"minecraft:generic.armor", Base:10},{Name:"minecraft:generic.attack_damage",Base:1}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:7}]}},{id:"minecraft:netherite_leggings",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:7}]}},{id:"minecraft:netherite_chestplate",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:7}]}},{id:"minecraft:netherite_helmet",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:7}]}}],ArmorDropChances:[0.50f,0.50f,0.50f,0.50f],HandItems:[{id:"minecraft:shield",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:5}]}},{id:"minecraft:shield",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:5}]}}],HandDropChances:[0.33f,0.33f],Tags:["giant_half"]}
+summon zombie ~ ~ ~ {CustomName:'{"text":"Marcelo"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.35},{Name:"minecraft:generic.armor", Base:-5},{Name:"minecraft:generic.attack_damage",Base:13}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{id:"minecraft:netherite_leggings",Count:1b},{id:"minecraft:netherite_chestplate",Count:1b},{id:"minecraft:netherite_helmet",Count:1b}],ArmorDropChances:[0.75f,0.75f,0.75f,0.75f],HandItems:[{id:"minecraft:netherite_sword",Count:1b},{id:"minecraft:netherite_axe",Count:1b}],HandDropChances:[0.75f,0.75f],Tags:["giant_half"]}
+summon husk ~ ~ ~ {CustomName:'{"text":"Bruno"}',CustomNameVisible:1b,Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.4},{Name:"minecraft:generic.armor", Base:-20},{Name:"minecraft:generic.attack_damage",Base:20},{Name:"minecraft:generic.attack_speed",Base:4}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],HandItems:[{id:"minecraft:netherite_sword",tag:{Enchantments:[{id:"minecraft:sharpness",lvl:8}]},Count:1b},{id:"minecraft:netherite_axe",tag:{Enchantments:[{id:"minecraft:sharpness",lvl:7}]},Count:1b}],HandDropChances:[0.25f,0.25f],Tags:["giant_half"]}
+team join giant_friend @e[tag=giant_half,tag=giant]
