@@ -3,7 +3,8 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:stick"},playerGameType:1}] at @s 
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:stick"},playerGameType:1},team=adm] at @s run function random-things:adm_remove
 execute as @e[type=item,name="TNT"] at @s if entity @e[type=item,name="Nether Star",distance=..2] run function random-things:nuke
 execute as @a[nbt={ Inventory:[{Slot:-106b,id: "minecraft:coal"}]}] run function random-things:plane_fuel
-execute as @e[type=minecraft:item,tag=!smt] at @s if block ^ ^-1 ^ minecraft:smithing_table run data merge entity @s {PickupDelay:200s,Tags:["smt"]}
+execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run data merge entity @s {PickupDelay:200s}
+execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run tag @s add smt
 #arrow-related
 execute as @a run function random-things:tnt_arrow
 execute as @a run function random-things:random_arrow
