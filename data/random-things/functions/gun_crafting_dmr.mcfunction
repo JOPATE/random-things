@@ -79,3 +79,11 @@ execute as @e[tag=jopate_shovel,type=armor_stand] at @s run particle flash
 execute as @e[tag=jopate_shovel,type=armor_stand] at @s run particle explosion
 execute as @e[tag=jopate_shovel,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
 kill @e[tag=jopate_shovel,type=armor_stand]
+#bundle
+execute as @e[tag=bundle,type=armor_stand] at @s run kill @e[name="String",distance=..2.5,type=item]
+execute as @e[tag=bundle,type=armor_stand] at @s run kill @e[name="Rabbit Hide",distance=..2.5,type=item]
+execute as @e[tag=bundle,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:bundle", Count: 1b}}
+execute as @e[tag=bundle,type=armor_stand] at @s run particle flash
+execute as @e[tag=bundle,type=armor_stand] at @s run particle explosion
+execute as @e[tag=bundle,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=bundle,type=armor_stand]
