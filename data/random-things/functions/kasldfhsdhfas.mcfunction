@@ -1,1 +1,0 @@
-summon armor_stand ~ ~ ~ {ShowArms:1b,HandItems:[{id:"minecraft:netherite_sword",Count:64b,tag:{}}]}

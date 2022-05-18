@@ -25,3 +25,6 @@ team modify giant_friend friendlyFire false
 team modify giant_friend collisionRule pushOtherTeams
 team modify giant_friend color dark_red
 scoreboard objectives add giant_Deaths deathCount
+scoreboard players set 75 giant_life 75
+scoreboard objectives add giant_timer2 dummy
+scoreboard players set timer giant_timer2 150

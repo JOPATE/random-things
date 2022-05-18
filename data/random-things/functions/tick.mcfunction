@@ -42,8 +42,10 @@ execute if score timer giant_timer = f pf_timer at @e[tag=giant] run gamerule sh
 execute if score timer giant_timer = f pf_timer at @e[tag=giant] run effect give @a[distance=..4,limit=1] instant_damage 1 2 true
 execute as @e[tag=giant] store result score giant_life giant_life run data get entity @s Health
 execute if score giant_life giant_life <= 50 giant_life as @e[tag=giant,tag=!giant_half] at @s run function random-things:giant_half
+execute if score giant_life giant_life <= 75 giant_life as @e[tag=giant] at @s run function random-things:giant_ar_counter
 execute if score u giant_bar = f pf_timer run scoreboard players set giant_life giant_life 100
 execute as @e[tag=poison_zombie] at @s run effect give @a[distance=..6] wither 1 2 true
 execute at @e[tag=giant] as @a[scores={giant_Deaths=1},distance=..4.5] run tellraw @a ["",{"selector":"@s"},{"text":" couldn't tank the Giant"}]
 execute as @a[scores={giant_Deaths=1}] at @s run scoreboard players set @s giant_Deaths 0
 execute if score timer giant_timer = f pf_timer run scoreboard players set timer giant_timer 45
+execute if score timer giant_timer2 = f pf_timer run scoreboard players set timer giant_timer2 150
