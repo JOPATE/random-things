@@ -6,6 +6,12 @@ execute as @e[type=item,name="TNT"] at @s if entity @e[type=item,name="Nether St
 execute as @a[nbt={ Inventory:[{Slot:-106b,id: "minecraft:coal"}]}] run function random-things:plane_fuel
 execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run data merge entity @s {PickupDelay:200s}
 execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run tag @s add smt
+execute if score timer mob_stop_cooldown > f pf_timer run scoreboard players remove timer mob_stop_cooldown 1
+execute if score timer mob_stop_cooldown = f pf_timer run item replace entity @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402011}}}] weapon.mainhand with carrot_on_a_stick{CustomModelData:402010}
+execute if score timer mob_stop_cooldown > f pf_timer run item replace entity @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402010}}}] weapon.mainhand with carrot_on_a_stick{CustomModelData:402011}
+#right click
+execute if score timer mob_stop_cooldown = f pf_timer as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402010}}}] at @s run function random-things:mob_stop
+scoreboard players set @a right_click 0
 #arrow-related
 execute as @a run function random-things:tnt_arrow
 execute as @a run function random-things:random_arrow
@@ -48,4 +54,4 @@ execute as @e[tag=poison_zombie] at @s run effect give @a[distance=..6] wither 1
 execute at @e[tag=giant] as @a[scores={giant_Deaths=1},distance=..4.5] run tellraw @a ["",{"selector":"@s"},{"text":" couldn't tank the Giant"}]
 execute as @a[scores={giant_Deaths=1}] at @s run scoreboard players set @s giant_Deaths 0
 execute if score timer giant_timer = f pf_timer run scoreboard players set timer giant_timer 45
-execute if score timer giant_timer2 = f pf_timer run scoreboard players set timer giant_timer2 150
+execute if score timer giant_timer2 <= f pf_timer run scoreboard players set timer giant_timer2 150

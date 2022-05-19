@@ -28,3 +28,6 @@ scoreboard objectives add giant_Deaths deathCount
 scoreboard players set 75 giant_life 75
 scoreboard objectives add giant_timer2 dummy
 scoreboard players set timer giant_timer2 150
+scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add mob_stop_cooldown dummy
+scoreboard players set timer mob_stop_cooldown 0

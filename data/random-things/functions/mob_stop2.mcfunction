@@ -1,0 +1,1 @@
+execute as @e[tag=stopped] run data merge entity @s {NoAI:0b}

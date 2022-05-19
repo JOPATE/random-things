@@ -87,3 +87,12 @@ execute as @e[tag=bundle,type=armor_stand] at @s run particle flash
 execute as @e[tag=bundle,type=armor_stand] at @s run particle explosion
 execute as @e[tag=bundle,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
 kill @e[tag=bundle,type=armor_stand]
+#mob stop
+execute as @e[tag=mob_stop,type=armor_stand] at @s run kill @e[name="Blaze Rod",distance=..2.5,type=item]
+execute as @e[tag=mob_stop,type=armor_stand] at @s run kill @e[name="Netherite Ingot",distance=..2.5,type=item]
+execute as @e[tag=mob_stop,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
+execute as @e[tag=mob_stop,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:carrot_on_a_stick", Count: 1b,tag:{CustomModelData:402010,display:{Name:'{ "text": "Mob Stop Wand","color": "dark_purple","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}}}
+execute as @e[tag=mob_stop,type=armor_stand] at @s run particle flash
+execute as @e[tag=mob_stop,type=armor_stand] at @s run particle explosion
+execute as @e[tag=mob_stop,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=mob_stop,type=armor_stand]
