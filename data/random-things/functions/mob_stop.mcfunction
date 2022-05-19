@@ -4,4 +4,4 @@ schedule function random-things:mob_stop2 140t append
 particle flash ~ ~1 ~
 playsound ambient.cave master @a[distance=..35] ~ ~ ~ 
 scoreboard players set timer mob_stop_cooldown 200
-xp add @s -5 levels
+clear @s emerald 1
