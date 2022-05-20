@@ -31,3 +31,5 @@ scoreboard players set timer giant_timer2 150
 scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add mob_stop_cooldown dummy
 scoreboard players set timer mob_stop_cooldown 0
+scoreboard objectives add bad_effects_cooldown dummy
+scoreboard players set timer bad_effects_cooldown 0

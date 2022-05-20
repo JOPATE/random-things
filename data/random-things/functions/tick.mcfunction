@@ -8,9 +8,10 @@ execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ 
 execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run tag @s add smt
 execute if score timer mob_stop_cooldown > f pf_timer run scoreboard players remove timer mob_stop_cooldown 1
 execute if score timer mob_stop_cooldown = f pf_timer run item replace entity @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402011}}}] weapon.mainhand with carrot_on_a_stick{CustomModelData:402010,display:{Name:'{ "text": "Mob Stop Wand","color": "dark_blue","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}
-execute if score timer mob_stop_cooldown > f pf_timer run item replace entity @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402010}}}] weapon.mainhand with carrot_on_a_stick{CustomModelData:402011,display:{Name:'{ "text": "Mob Stop Wand","color": "dark_red","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}
+execute if score timer mob_stop_cooldown > f pf_timer run item replace entity @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402010}},Inventory:[{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Mob Stop Scroll","italic": false, "color": "dark_purple"}'}}}]}] weapon.mainhand with carrot_on_a_stick{CustomModelData:402011,display:{Name:'{ "text": "Mob Stop Wand","color": "dark_red","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}
 #right click
 execute if score timer mob_stop_cooldown = f pf_timer as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402010}},Inventory:[{id:"minecraft:emerald"}]}] at @s run function random-things:mob_stop
+execute if score timer bad_effects_cooldown = f pf_timer as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:402012}},Inventory:[{id:"minecraft:emerald",tag:{CustomModelData:402013}}]}] at @s run function random-things:bad_effects
 scoreboard players set @a right_click 0
 #arrow-related
 execute as @a run function random-things:tnt_arrow
