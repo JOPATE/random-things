@@ -113,3 +113,21 @@ execute as @e[tag=gray_gem,type=armor_stand] at @s run particle flash
 execute as @e[tag=gray_gem,type=armor_stand] at @s run particle explosion
 execute as @e[tag=gray_gem,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
 kill @e[tag=gray_gem,type=armor_stand]
+#bad effect scroll
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run kill @e[name="Netherite Scrap",distance=..2.5,type=item]
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run kill @e[name="Paper",distance=..2.5,type=item]
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:paper", Count: 1b,tag:{display:{Name:'{ "text": "Bad Effects Scroll","italic": false, "color": "dark_gray"}'},CustomModelData:402019}}}
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run particle flash
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run particle explosion
+execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=bad_effect_scroll,type=armor_stand]
+#mob stop scroll
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run kill @e[name="Netherite Scrap",distance=..2.5,type=item]
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run kill @e[name="Paper",distance=..2.5,type=item]
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:paper", Count: 1b,tag:{display:{Name:'{ "text": "Mob Stop Scroll","italic": false, "color": "dark_blue"}'},CustomModelData:402018}}}
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run particle flash
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run particle explosion
+execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=mob_stop_scroll,type=armor_stand]
