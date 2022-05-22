@@ -113,6 +113,14 @@ execute as @e[tag=gray_gem,type=armor_stand] at @s run particle flash
 execute as @e[tag=gray_gem,type=armor_stand] at @s run particle explosion
 execute as @e[tag=gray_gem,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
 kill @e[tag=gray_gem,type=armor_stand]
+#dark green
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run kill @e[name="Ender Pearl",distance=..2.5,type=item]
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:emerald", Count: 10b,tag:{CustomModelData:402020,display:{Name:'{ "text": "Dark Green Gem","color": "dark_green","italic": false}'},HideFlags:1}}}
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run particle flash
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run particle explosion
+execute as @e[tag=dark_green_gem,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=dark_green_gem,type=armor_stand]
 #bad effect scroll
 execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run kill @e[name="Netherite Scrap",distance=..2.5,type=item]
 execute as @e[tag=bad_effect_scroll,type=armor_stand] at @s run kill @e[name="Paper",distance=..2.5,type=item]
@@ -131,3 +139,12 @@ execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run particle flash
 execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run particle explosion
 execute as @e[tag=mob_stop_scroll,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
 kill @e[tag=mob_stop_scroll,type=armor_stand]
+#teleport scroll
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run kill @e[name="Netherite Scrap",distance=..2.5,type=item]
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run kill @e[name="Paper",distance=..2.5,type=item]
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:paper", Count: 1b,tag:{display:{Name:'{ "text": "Teleport Scroll","italic": false, "color": "dark_green"}'},CustomModelData:402022}}}
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run particle flash
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run particle explosion
+execute as @e[tag=teleport_scroll,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
+kill @e[tag=teleport_scroll,type=armor_stand]
