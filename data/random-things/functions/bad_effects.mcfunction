@@ -8,3 +8,4 @@ particle flash ~ ~1 ~
 playsound ambient.cave master @a[distance=..35] ~ ~ ~ 
 scoreboard players set timer bad_effects_cooldown 600
 clear @s emerald{CustomModelData:402013} 1
+tag @s remove good_effects
