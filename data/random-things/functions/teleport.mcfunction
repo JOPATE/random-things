@@ -17,4 +17,4 @@ particle glow_squid_ink ^ ^0.5 ^1
 particle glow_squid_ink ^ ^0.5 ^0
 playsound entity.enderman.teleport master @a[distance=..35] ~ ~ ~ 
 tp ^ ^ ^12
-clear @s emerald{CustomModelData:402020} 1
+clear @s[nbt=!{ playerGameType:1}] emerald{CustomModelData:402020} 1
