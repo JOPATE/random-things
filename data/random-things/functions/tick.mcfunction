@@ -7,7 +7,7 @@ execute as @a[nbt={ Inventory:[{Slot:-106b,id: "minecraft:coal"}]}] run function
 execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run data merge entity @s {PickupDelay:200s}
 execute as @e[type=minecraft:item,tag=!smt,tag=!jopate2] at @s if block ^ ^-1 ^ minecraft:smithing_table run tag @s add smt
 scoreboard players remove timer flame_bat_timer 1
-execute at @e[tag=flame_bat] if score timer flame_bat_timer = f pf_timer run particle flame ^ ^0.5 ^-0.55
+execute as @e[tag=flame_bat] at @s if score timer flame_bat_timer = f pf_timer run particle flame ^ ^0.5 ^-0.55 0.05 0.05 0.05 0.05 1 force
 execute if score timer flame_bat_timer = f pf_timer run scoreboard players set timer flame_bat_timer 5
 execute as @e[tag=flame_bat] at @s unless entity @a[distance=..25] run kill @s
 #invisible armor
@@ -32,11 +32,13 @@ execute as @a if score @s mob_stop_cooldown > f pf_timer run scoreboard players 
 execute as @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Mob Stop Scroll","italic": false, "color": "dark_blue"}'},CustomModelData:402018}}]}] if score @s mob_stop_cooldown = f pf_timer run item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:402010,display:{Lore:['{"text": "can be used to make magic","italic": false}'],Name:'{ "text": "Wand Selected: Mob Stop","color": "dark_blue","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}
 execute as @a[nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Mob Stop Scroll","italic": false, "color": "dark_blue"}'},CustomModelData:402018}}]}] if score @s mob_stop_cooldown > f pf_timer run item replace entity @s weapon.mainhand with carrot_on_a_stick{CustomModelData:402011,display:{Lore:['{"text": "can be used to make magic","italic": false}'],Name:'{ "text": "Wand Selected: Mob Stop","color": "dark_red","italic": false}'},Enchantments:[{id:"minecraft:unbreaking",lvl:100}],HideFlags:1}
 #right click
+execute as @s[scores={jet-pack_right-click=1}] run function random-things:jet-pack
+execute as @s[scores={jet-pack_right-click=0},nbt={SelectedItem:{id:"minecraft:ender_eye",tag:{CustomModelData:402040}}}] run function random-things:jet-pack2
 execute as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{id:"minecraft:emerald",tag:{CustomModelData:402015}},{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Mob Stop Scroll","italic": false, "color": "dark_blue"}'},CustomModelData:402018}}]}] if score @s mob_stop_cooldown = f pf_timer at @s run function random-things:mob_stop
 execute as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{id:"minecraft:emerald",tag:{CustomModelData:402013}},{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Bad Effects Scroll","italic": false, "color": "dark_gray"}'},CustomModelData:402019}}]}] if score @s bad_effects_cooldown = f pf_timer at @s run function random-things:bad_effects
 execute as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{id:"minecraft:emerald",tag:{CustomModelData:402020}},{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Teleport Scroll","italic": false, "color": "dark_green"}'},CustomModelData:402022}}]}] at @s run function random-things:teleport
 execute as @a[scores={right_click=1},nbt={ SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Lore:['{"text": "can be used to make magic","italic": false}']}}},Inventory:[{id:"minecraft:emerald",tag:{CustomModelData:402030}},{Slot:-106b,id:"minecraft:paper",tag:{display:{Name:'{ "text": "Flame Bat Scroll","italic": false, "color": "gold"}'},CustomModelData:402028}}]}] at @s run function random-things:flame_bat
-scoreboard players set @a right_click 0
+scoreboard players reset @a right_click
 #arrow-related
 execute as @a run function random-things:tnt_arrow
 execute as @a run function random-things:random_arrow

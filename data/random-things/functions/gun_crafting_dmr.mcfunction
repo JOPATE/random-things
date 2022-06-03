@@ -167,7 +167,7 @@ kill @e[tag=glass_boots,type=armor_stand]
 #glass-leggings
 execute as @e[tag=glass_leggings,type=armor_stand] at @s run kill @e[name="Netherite Leggings",distance=..2.5,type=item]
 execute as @e[tag=glass_leggings,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
-execute as @e[tag=glass_leggings,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_leggings", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 11","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Leggings","italic": false, "color": "gray"}'},CustomModelData:402023}},Tags:["smt"]}
+execute as @e[tag=glass_leggings,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_leggings", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 11","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Leggings","italic": false, "color": "gray"}'},CustomModelData:402024}},Tags:["smt"]}
 execute as @e[tag=glass_leggings,type=armor_stand] at @s run particle flash
 execute as @e[tag=glass_leggings,type=armor_stand] at @s run particle explosion
 execute as @e[tag=glass_leggings,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
@@ -175,7 +175,7 @@ kill @e[tag=glass_leggings,type=armor_stand]
 #glass-chestplate
 execute as @e[tag=glass_chestplate,type=armor_stand] at @s run kill @e[name="Netherite Chestplate",distance=..2.5,type=item]
 execute as @e[tag=glass_chestplate,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
-execute as @e[tag=glass_chestplate,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_chestplate", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 10","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Chestplate","italic": false, "color": "gray"}'},CustomModelData:402023}},Tags:["smt"]}
+execute as @e[tag=glass_chestplate,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_chestplate", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 10","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Chestplate","italic": false, "color": "gray"}'},CustomModelData:402025}},Tags:["smt"]}
 execute as @e[tag=glass_chestplate,type=armor_stand] at @s run particle flash
 execute as @e[tag=glass_chestplate,type=armor_stand] at @s run particle explosion
 execute as @e[tag=glass_chestplate,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~
@@ -183,7 +183,7 @@ kill @e[tag=glass_chestplate,type=armor_stand]
 #glass-helmet
 execute as @e[tag=glass_helmet,type=armor_stand] at @s run kill @e[name="Netherite Helmet",distance=..2.5,type=item]
 execute as @e[tag=glass_helmet,type=armor_stand] at @s run kill @e[name="Emerald",distance=..2.5,type=item]
-execute as @e[tag=glass_helmet,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_helmet", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 09","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Helmet","italic": false, "color": "gray"}'},CustomModelData:402023}},Tags:["smt"]}
+execute as @e[tag=glass_helmet,type=armor_stand] at @s run summon minecraft:item ~ ~ ~ {Item: {id: "minecraft:netherite_helmet", Count: 1b,tag:{display:{Lore:['{ "text": "Slot 09","italic": false,"color": "white","extra":[{"text": " DONT ENCHANT THIS SHIT","color": "red"}]}'],Name:'{ "text": "Glass Helmet","italic": false, "color": "gray"}'},CustomModelData:402026}},Tags:["smt"]}
 execute as @e[tag=glass_helmet,type=armor_stand] at @s run particle flash
 execute as @e[tag=glass_helmet,type=armor_stand] at @s run particle explosion
 execute as @e[tag=glass_helmet,type=armor_stand] at @s run playsound entity.generic.explode master @a ~ ~ ~

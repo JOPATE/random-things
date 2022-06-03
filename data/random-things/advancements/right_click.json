@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "right_click": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item":{
+                    "items": [
+                        "minecraft:ender_eye"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "random-things:jet-pack_right-click"
+    }
+}
