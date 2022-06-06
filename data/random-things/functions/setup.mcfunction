@@ -36,3 +36,6 @@ scoreboard players set timer bad_effects_cooldown 0
 scoreboard players set @a bad_effects_cooldown 0
 scoreboard players set @a mob_stop_cooldown 0
 scoreboard objectives add jet-pack_right-click dummy
+scoreboard players set @a jet-pack_right-click 0
+scoreboard objectives add jet-pack_fuel dummy
+scoreboard players set @a jet-pack_fuel 0
